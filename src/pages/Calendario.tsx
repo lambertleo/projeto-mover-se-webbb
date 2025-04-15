@@ -115,22 +115,22 @@ const Calendario = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-ser-text-dark mb-6">Calendário Completo</h2>
           
-          <div className="bg-white p-4 rounded-lg shadow-md mb-4">
-            <div className="relative h-0 overflow-hidden pb-[56.25%]">
+          <div className="bg-white p-4 rounded-lg shadow-md">
+            <div className="relative h-0 overflow-hidden pb-[75%] md:pb-[56.25%]">
               <iframe 
-                src="about:blank" 
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
                 title="Calendário do Projeto Mover-se"
-                className="absolute top-0 left-0 w-full h-full border-0 bg-ser-gray"
-              >
-                <div className="flex items-center justify-center h-full">
-                  <p className="text-ser-text">Calendário do Projeto Mover-se</p>
-                </div>
-              </iframe>
+                className="absolute top-0 left-0 w-full h-full border-0"
+                frameBorder="0"
+                scrolling="no"
+                allowFullScreen
+              />
             </div>
           </div>
           
-          <p className="text-sm text-ser-text text-center">
-            Este é um calendário simulado. Em uma implementação real, seria incorporado um Google Calendar ou outro sistema de calendário.
+          <p className="text-sm text-ser-text text-center mt-4">
+            O calendário acima mostra todas as atividades do Projeto Mover-se.
+            Clique em um evento para ver mais detalhes.
           </p>
         </div>
         
