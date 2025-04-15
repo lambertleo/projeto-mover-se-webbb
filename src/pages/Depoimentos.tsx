@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Depoimentos = () => {
   const testimonials = [
@@ -10,7 +11,9 @@ const Depoimentos = () => {
       author: "João Silva",
       course: "Administração",
       semester: "5º semestre",
-      activity: "Yoga"
+      activity: "Yoga",
+      image: "/lovable-uploads/6fbfc630-32b9-46e7-a576-c98591ddc6a1.png",
+      initial: "J"
     },
     {
       id: 2,
@@ -18,7 +21,9 @@ const Depoimentos = () => {
       author: "Maria Santos",
       course: "Psicologia",
       semester: "3º semestre",
-      activity: "Caminhada"
+      activity: "Caminhada",
+      image: "",
+      initial: "M"
     },
     {
       id: 3,
@@ -26,7 +31,9 @@ const Depoimentos = () => {
       author: "Pedro Oliveira",
       course: "Engenharia",
       semester: "7º semestre",
-      activity: "Alongamento"
+      activity: "Alongamento",
+      image: "",
+      initial: "P"
     },
     {
       id: 4,
@@ -34,7 +41,9 @@ const Depoimentos = () => {
       author: "Ana Luiza Costa",
       course: "Direito",
       semester: "4º semestre",
-      activity: "Jogos"
+      activity: "Jogos",
+      image: "",
+      initial: "A"
     },
     {
       id: 5,
@@ -42,7 +51,9 @@ const Depoimentos = () => {
       author: "Lucas Mendes",
       course: "Medicina",
       semester: "2º semestre",
-      activity: "Dança"
+      activity: "Dança",
+      image: "",
+      initial: "L"
     }
   ];
 
@@ -63,11 +74,12 @@ const Depoimentos = () => {
             <div key={testimonial.id} className="testimonial-card">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-ser-purple/30 rounded-full flex items-center justify-center">
-                    <span className="text-ser-purple-dark font-bold">
-                      {testimonial.author.charAt(0)}
-                    </span>
-                  </div>
+                  <Avatar className="h-12 w-12 bg-ser-lilac/50">
+                    <AvatarImage src={testimonial.image} alt={testimonial.author} />
+                    <AvatarFallback className="bg-ser-purple/30 text-ser-purple-dark font-bold">
+                      {testimonial.initial}
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between">
