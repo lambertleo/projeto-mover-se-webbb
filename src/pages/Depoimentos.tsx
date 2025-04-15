@@ -77,7 +77,7 @@ const Depoimentos = () => {
                   <Avatar className="h-12 w-12 bg-ser-lilac/50">
                     <AvatarImage src={testimonial.image} alt={testimonial.author} />
                     <AvatarFallback className="bg-ser-purple/30 text-ser-purple-dark font-bold">
-                      {testimonial.initial}
+                      {testimonial.author.charAt(0)}
                     </AvatarFallback>
                   </Avatar>
                 </div>
