@@ -63,9 +63,12 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-ser-purple/20">
-          <p className="text-sm text-center text-ser-text">
+        <div className="mt-8 pt-8 border-t border-ser-purple/20 text-center">
+          <p className="text-sm text-ser-text">
             &copy; {currentYear} Programa SER - FAE. Todos os direitos reservados.
+          </p>
+          <p className="text-xs text-ser-text mt-2">
+            Criadores do site: Leonardo Lambert e Isabela Pozza
           </p>
         </div>
       </div>
@@ -74,3 +77,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
