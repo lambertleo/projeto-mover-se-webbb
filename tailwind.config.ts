@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'opensans': ['"Open Sans"', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Programa SER
+				'ser-blue': '#D3E4FD',
+				'ser-lilac': '#D6BCFA',
+				'ser-purple': '#9b87f5',
+				'ser-purple-dark': '#7E69AB',
+				'ser-gray': '#F1F0FB',
+				'ser-text': '#4A5568',
+				'ser-text-dark': '#2D3748',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
